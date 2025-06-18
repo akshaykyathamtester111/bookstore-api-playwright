@@ -1,0 +1,9 @@
+#node modules
+node_modules
+
+#Test Results
+test-results
+playwright-report
+
+#package-lock
+package-lock.json
