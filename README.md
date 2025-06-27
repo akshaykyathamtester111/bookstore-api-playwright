@@ -17,9 +17,6 @@ This project provides a robust API automation framework for testing a FastAPI-ba
 * [Reporting](#reporting)
 * [Test Coverage](#test-coverage)
 * [CI/CD Integration](#cicd-integration)
-* [Challenges & Solutions](#challenges--solutions)
-* [Future Improvements](#future-improvements)
-* [Contributing](#contributing)
 
 ---
 
@@ -168,12 +165,6 @@ Trigger: Runs on every push to `main`.
 
 ---
 
-## Challenges & Solutions
-
-| Challenge                        | Solution                                       |
-|----------------------------------|------------------------------------------------|
-| Managing dynamic data            | Request chaining and global ID sharing         |
-| Running locally and in CI        | Used `.env` for easy environment switching     |
-| Reliable reporting               | Leveraged Playwright's built-in reporters      |
+Peace! Happy Coding!!
 
 ---
