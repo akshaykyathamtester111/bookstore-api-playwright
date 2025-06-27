@@ -36,21 +36,32 @@ This project provides a robust API automation framework for testing a FastAPI-ba
 
 ---
 
-## Project Structure
+# 📘 Bookstore API Automation Framework
 
-```
-/bookstore-api-playwright
-├── tests/                          # API test specs
-│   └── bookstore-api.spec.ts       # Main test suite
-├── utils/                          # Helper modules
-│   ├── apiClient.ts                # Axios/Fetch API client wrapper
-│   └── testData.ts                 # Static test data and config
-├── playwright.config.ts           # Playwright configuration
-├── .env                           # Environment-specific variables
-├── package.json                   # Project metadata and scripts
-├── tsconfig.json                  # TypeScript configuration
-├── README.md                      # Documentation
-└── .github/workflows/ci.yml       # GitHub Actions CI pipeline
+This is a robust and scalable **API test automation framework** built using [**Playwright**](https://playwright.dev/), [**TypeScript**](https://www.typescriptlang.org/), and [**Node.js**](https://nodejs.org/).
+
+---
+
+## 📂 Project Structure
+
+```bash
+bookstore-api-tests/
+├── .github/workflows/ci.yml      # GitHub Actions CI Pipeline
+├── tests/
+│   ├── auth.spec.ts              # Signup and login tests
+│   ├── createBook.spec.ts        # Create book with and without token
+│   ├── getBook.spec.ts           # Read book by ID
+│   ├── updateBook.spec.ts        # Update existing book
+│   ├── deleteBook.spec.ts        # Delete book scenarios
+│   ├── createWithToken.spec.ts   # Token-based creation test
+│   └── utils/
+│       ├── authHelper.ts         # Signup and login utilities
+│       ├── assertHelper.ts       # Reusable assertions
+│       └── testData.ts           # Valid and invalid payloads
+├── .env                          # Environment config (e.g., BASE_URL)
+├── playwright.config.ts          # Playwright test configuration
+├── package.json                  # Project metadata and scripts
+└── tsconfig.json                 # TypeScript compiler config
 ```
 
 ---
